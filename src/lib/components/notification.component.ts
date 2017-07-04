@@ -1,17 +1,17 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-    selector: 'bulma-tag',
+    selector: 'bulma-notification',
     template: `
-        <span class="tag" [bulmaColor]="color" [bulmaSize]="size">
-            <ng-content></ng-content>
+        <div class="notification" [bulmaColor]="color">
             <bulma-delete *ngIf="closeable !== undefined" (click)="close.emit()"></bulma-delete>
-        </span>
+            <ng-content></ng-content>
+        </div>
     `,
 })
-export class TagComponent {
-    @Input() size: string;
+export class NotificationComponent {
+    @Input() color: string;
     @Input() closeable: Boolean;
 
     @Output() close = new EventEmitter();
-}
+ }

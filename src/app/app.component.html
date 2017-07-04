@@ -8,18 +8,17 @@
 <bulma-button color="danger" size="large">large danger button</bulma-button>
 <bulma-button color="dark" size="normal">normal dark button</bulma-button>
 <bulma-button color="warning" size="small">small warning button</bulma-button>
+<bulma-button color="primary" loading>loading</bulma-button>
 
 <br />
 <br />
 
 <bulma-tag color="success"> 
   Success Tag
-  <bulma-delete></bulma-delete>
 </bulma-tag>
 
-<bulma-tag color="warning"> 
+<bulma-tag color="warning" closeable> 
   Warning Tag
-  <bulma-delete></bulma-delete>
 </bulma-tag>
 
 <br />
@@ -28,3 +27,38 @@
 <bulma-box>
   Hello
 </bulma-box>
+
+<br />
+<br />
+
+<bulma-notification color="primary" closeable (close)="handleClose()">
+  Hello!
+</bulma-notification>
+
+<br />
+<br />
+
+<bulma-progress value="50" color="warning" size="small"></bulma-progress>
+
+<br />
+<br />
+
+<bulma-message header="hello!" color="danger">
+  Hi, what's up? <em>!!!</em>
+</bulma-message>
+
+<br />
+<br />
+
+<bulma-tabs>
+  <bulma-tab header="hello" icon="bandcamp"></bulma-tab>
+  <bulma-tab header="world"></bulma-tab>
+</bulma-tabs>
+
+<br />
+<br />
+
+<bulma-columns>
+  <bulma-column width="10">Hello!</bulma-column>
+  <bulma-column>Grid!</bulma-column>
+</bulma-columns>

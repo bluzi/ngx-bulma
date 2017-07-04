@@ -16,7 +16,6 @@ export class ColorDirective implements OnChanges {
     @HostBinding('class.is-danger') isDanger: boolean;
 
     ngOnChanges(changes: SimpleChanges): void {
-        console.log("this shit has changed");        
         this.isWhite = this.bulmaColor === 'white';        
         this.isDark = this.bulmaColor === 'dark';        
         this.isBlack = this.bulmaColor === 'black';        

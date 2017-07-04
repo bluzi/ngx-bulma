@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input, HostBinding } from '@angular/core';
 
 @Component({
     selector: 'bulma-delete',
-    template: `
-       <a class="delete"></a>
-    `,
+    template: ``,
 })
-export class DeleteComponent { }
+export class DeleteComponent {
+    @HostBinding('class.delete') isDelete = true;
+
+    @Input() size;
+ }

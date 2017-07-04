@@ -7,5 +7,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  handleClose() {
+    alert('closed!');
+  }
 }
