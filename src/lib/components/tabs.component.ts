@@ -1,4 +1,4 @@
-import { Component, Input, ContentChildren, Directive } from '@angular/core';
+import { Component, Input, ContentChildren, Directive, HostBinding } from '@angular/core';
 
 @Directive({
     selector: 'bulma-tab',
@@ -6,14 +6,14 @@ import { Component, Input, ContentChildren, Directive } from '@angular/core';
 export class TabDirective {
     @Input() header: string;
     @Input() icon: string;
-
-    constructor() { }    
 }
 
  @Component({
     selector: 'bulma-tabs',
     template: `
-       <div class="tabs" [bulmaSize]="size">
+       <div class="tabs" [bulmaSize]="size" [ngClass]="{ 'is-boxed': boxed !== undefined, 
+                                                       'is-toggle': toggle !== undefined, 
+                                                       'is-fullwidth': fullwidth !== undefined }">
             <ul>
                 <li *ngFor="let tab of tabs">
                     <a>
@@ -28,5 +28,8 @@ export class TabDirective {
 export class TabsComponent {
     @ContentChildren(TabDirective) tabs;
     @Input() size: string;
+    @Input() boxed: boolean;
+    @Input() toggle: boolean;
+    @Input() fullwidth: boolean;
  }
 

@@ -1,3 +1,4 @@
+import { TileComponent } from './components/tiles.component';
 import { MessageComponent } from './components/message.component';
 import { ProgressComponent } from './components/progress.component';
 import { CommonModule } from '@angular/common';  
@@ -17,7 +18,7 @@ import { NgModule } from '@angular/core';
 import { TabsComponent, TabDirective } from './components/tabs.component';
 import { ColumnsComponent, ColumnComponent } from './components/columns.component';
 
-let publicDirectives = [
+const publicDirectives = [
   ButtonComponent,
   DeleteComponent,
   TagComponent,
@@ -33,9 +34,10 @@ let publicDirectives = [
   TabDirective,
   ColumnsComponent,
   ColumnComponent,
+  TileComponent,
 ];
 
-let privateDirectives = [
+const privateDirectives = [
   ColorDirective,
   SizeDirective,
 ];

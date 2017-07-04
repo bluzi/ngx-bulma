@@ -13,11 +13,11 @@
 <br />
 <br />
 
-<bulma-tag color="success"> 
+<bulma-tag color="success">
   Success Tag
 </bulma-tag>
 
-<bulma-tag color="warning" closeable> 
+<bulma-tag color="warning" closeable>
   Warning Tag
 </bulma-tag>
 
@@ -50,15 +50,44 @@
 <br />
 <br />
 
-<bulma-tabs>
-  <bulma-tab header="hello" icon="bandcamp"></bulma-tab>
+<bulma-tabs fullwidth>
+  <bulma-tab header="hello"></bulma-tab>
   <bulma-tab header="world"></bulma-tab>
 </bulma-tabs>
 
 <br />
 <br />
 
+<bulma-tabs toggle fullwidth size="large">
+  <bulma-tab header="hello" icon="home"></bulma-tab>
+  <bulma-tab header="world" icon="globe"></bulma-tab>
+</bulma-tabs>
+
+<br />
+<br />
+
 <bulma-columns>
-  <bulma-column width="10">Hello!</bulma-column>
+  <bulma-column size="10">Hello!</bulma-column>
   <bulma-column>Grid!</bulma-column>
 </bulma-columns>
+
+<br />
+<br />
+
+<bulma-tile ancestor>
+  <bulma-tile vertical parent size="4">
+    <bulma-tile child>
+        <bulma-title>One</bulma-title>
+    </bulma-tile>
+    
+    <bulma-tile child>
+        <bulma-title>Two</bulma-title>
+    </bulma-tile>
+  </bulma-tile>
+
+  <bulma-tile parent>
+    <bulma-tile child>
+        <bulma-title>Three</bulma-title>
+    </bulma-tile>
+  </bulma-tile>
+</bulma-tile>
