@@ -1,14 +1,13 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, HostBinding } from '@angular/core';
 
 @Component({
-    selector: 'bulma-icon',
+    selector: 'bu-icon',
     template: `
-        <span class="icon" [bulmaSize]="size">
-            <i class="fa fa-{{name}}" *ngIf="name"></i>
-        </span>
+        <i class="fa fa-{{name}}" *ngIf="name"></i>
     `,
 })
 export class IconComponent { 
+    @HostBinding('class.icon') isIcon = true;
+
     @Input() name;
-    @Input() size;
 }

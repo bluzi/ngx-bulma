@@ -1,16 +1,15 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, HostBinding } from '@angular/core';
 
 @Component({
-    selector: 'bulma-tag',
+    selector: 'bu-tag',
     template: `
-        <span class="tag" [bulmaColor]="color" [bulmaSize]="size">
-            <ng-content></ng-content>
-            <bulma-delete *ngIf="closeable !== undefined" (click)="close.emit()"></bulma-delete>
-        </span>
+        <ng-content></ng-content>
+        <bu-delete *ngIf="closeable !== undefined" (click)="close.emit()"></bu-delete>
     `,
 })
 export class TagComponent {
-    @Input() size: string;
+    @HostBinding('class.tag') isTag = true;
+
     @Input() closeable: Boolean;
 
     @Output() close = new EventEmitter();

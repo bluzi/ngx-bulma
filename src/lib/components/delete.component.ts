@@ -1,7 +1,7 @@
 import { Component, Input, HostBinding } from '@angular/core';
 
 @Component({
-    selector: 'bulma-delete',
+    selector: 'bu-delete',
     template: ``,
 })
 export class DeleteComponent {

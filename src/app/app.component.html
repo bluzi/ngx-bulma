@@ -1,93 +1,107 @@
-<bulma-title>Title!</bulma-title>
+<bu-title>ngx-bulma</bu-title>
 
-<bulma-subtitle>Subtitle!</bulma-subtitle>
 
-<br />
-<br />
+<section>
+  <bu-subtitle>Buttons</bu-subtitle>
+  <bu-button buDanger buLarge>large danger button</bu-button>
+  <bu-button buDark buNormal>normal dark button</bu-button>
+  <bu-button buWarning buSmall>small warning button</bu-button>
 
-<bulma-button color="danger" size="large">large danger button</bulma-button>
-<bulma-button color="dark" size="normal">normal dark button</bulma-button>
-<bulma-button color="warning" size="small">small warning button</bulma-button>
-<bulma-button color="primary" loading>loading</bulma-button>
+  <br />
+  <br />
+  
+  <bu-button buPrimary loading>loading</bu-button>  
+  <a bu-button buSuccess>Directive button</a>
+  <a bu-button outlined buDanger>Outlined button</a>
+  <a bu-button inverted buWarning>inverted button</a>
+</section>
 
-<br />
-<br />
+<section>
+  <bu-subtitle>Tags</bu-subtitle>
+  <bu-tag buSuccess>
+    Success Tag
+  </bu-tag>
 
-<bulma-tag color="success">
-  Success Tag
-</bulma-tag>
+  <bu-tag buWarning closeable>
+    Warning Tag
+  </bu-tag>
+</section>
 
-<bulma-tag color="warning" closeable>
-  Warning Tag
-</bulma-tag>
+<section>
+  <bu-subtitle>Boxes</bu-subtitle>
+  <bu-box>
+    Hello from box
+  </bu-box>
 
-<br />
-<br />
+  <div bu-box>
+    Hello from directive box
+  </div>
+</section>
 
-<bulma-box>
-  Hello
-</bulma-box>
+<section>
+  <bu-subtitle>Notification</bu-subtitle>
+  <bu-notification buPrimary closeable (close)="handleClose()">
+    Hello from primary closable notification
+  </bu-notification>
 
-<br />
-<br />
+  <div bu-notification closeable>
+    Hello from directive closable notificaiton
+  </div>
+</section>
 
-<bulma-notification color="primary" closeable (close)="handleClose()">
-  Hello!
-</bulma-notification>
+<section>
+  <bu-subtitle>Progress bar</bu-subtitle>
+  <progress class="progress" value="50" max="100" buWarning buSmall>50</progress>
+</section>
 
-<br />
-<br />
+<section>
+  <bu-subtitle>Message</bu-subtitle>
+  <bu-message header="hello!" buDanger>
+    Hello from a non-closable danger <em>message</em>!
+  </bu-message>
+</section>
 
-<bulma-progress value="50" color="warning" size="small"></bulma-progress>
+<section>
+  <bu-subtitle>Tabs</bu-subtitle>
+  <bu-tabs fullwidth>
+    <bu-tab header="hello"></bu-tab>
+    <bu-tab header="world"></bu-tab>
+  </bu-tabs>
 
-<br />
-<br />
+  <br />
 
-<bulma-message header="hello!" color="danger">
-  Hi, what's up? <em>!!!</em>
-</bulma-message>
+  <bu-tabs toggle fullwidth buLarge>
+    <bu-tab header="hello" icon="home"></bu-tab>
+    <bu-tab header="world" icon="globe"></bu-tab>
+  </bu-tabs>
+</section>
 
-<br />
-<br />
+<section>
+  <bu-subtitle>Grid</bu-subtitle>
+  <bu-columns>
+    <bu-column size="10">Size 10!</bu-column>
+    <bu-column>Fills to rest</bu-column>
+  </bu-columns>
+</section>
 
-<bulma-tabs fullwidth>
-  <bulma-tab header="hello"></bulma-tab>
-  <bulma-tab header="world"></bulma-tab>
-</bulma-tabs>
+<section>
+  <bu-subtitle>Tiles</bu-subtitle>
 
-<br />
-<br />
+  <bu-tile ancestor>
+    <bu-tile vertical parent size="4">
+      <bu-tile child bu-box>
+          <bu-title>One</bu-title>
+      </bu-tile>
+      
+      <bu-tile child>
+          <bu-title>Two</bu-title>
+      </bu-tile>
+    </bu-tile>
 
-<bulma-tabs toggle fullwidth size="large">
-  <bulma-tab header="hello" icon="home"></bulma-tab>
-  <bulma-tab header="world" icon="globe"></bulma-tab>
-</bulma-tabs>
-
-<br />
-<br />
-
-<bulma-columns>
-  <bulma-column size="10">Hello!</bulma-column>
-  <bulma-column>Grid!</bulma-column>
-</bulma-columns>
-
-<br />
-<br />
-
-<bulma-tile ancestor>
-  <bulma-tile vertical parent size="4">
-    <bulma-tile child>
-        <bulma-title>One</bulma-title>
-    </bulma-tile>
-    
-    <bulma-tile child>
-        <bulma-title>Two</bulma-title>
-    </bulma-tile>
-  </bulma-tile>
-
-  <bulma-tile parent>
-    <bulma-tile child>
-        <bulma-title>Three</bulma-title>
-    </bulma-tile>
-  </bulma-tile>
-</bulma-tile>
+    <bu-tile parent>
+      <bu-tile child>
+          <bu-title>Three</bu-title>
+      </bu-tile>
+    </bu-tile>
+  </bu-tile>
+</section>

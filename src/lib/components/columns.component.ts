@@ -1,7 +1,7 @@
 import { Component, Input, ContentChildren, Directive, HostBinding, SimpleChanges, OnChanges } from '@angular/core';
 
 @Component({
-    selector: 'bulma-column',
+    selector: 'bu-column',
     template: `<ng-content></ng-content>`
 })
 export class ColumnComponent {
@@ -27,7 +27,7 @@ export class ColumnComponent {
 }
 
  @Component({
-    selector: 'bulma-columns',
+    selector: 'bu-columns',
     template: `<ng-content></ng-content>`
 })
 export class ColumnsComponent {

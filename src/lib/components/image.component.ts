@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-    selector: 'bulma-image',
+    selector: 'bu-image',
     template: `
         <figure class="image">
             <img [src]="src">

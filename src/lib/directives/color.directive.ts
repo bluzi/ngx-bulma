@@ -1,28 +1,89 @@
 import { Directive, HostBinding, Input, OnChanges, SimpleChanges } from '@angular/core';
 
 @Directive({
-    selector: '[bulmaColor]'
+    selector: '[buDanger]'
 })
-export class ColorDirective implements OnChanges {
-    @Input() bulmaColor: string;
-    
-    @HostBinding('class.is-white') isWhite: boolean;
-    @HostBinding('class.is-dark') isDark: boolean;
-    @HostBinding('class.is-black') isBlack: boolean;
-    @HostBinding('class.is-primary') isPrimary: boolean;
-    @HostBinding('class.is-info') isInfo: boolean;
-    @HostBinding('class.is-success') isSuccess: boolean;
-    @HostBinding('class.is-warning') isWarning: boolean;
+export class DangerDirective {
     @HostBinding('class.is-danger') isDanger: boolean;
+    
+    @Input() set buDanger(value: boolean) {
+        this.isDanger = (value !== undefined && value !== false);
+    }
+}
 
-    ngOnChanges(changes: SimpleChanges): void {
-        this.isWhite = this.bulmaColor === 'white';        
-        this.isDark = this.bulmaColor === 'dark';        
-        this.isBlack = this.bulmaColor === 'black';        
-        this.isPrimary = this.bulmaColor === 'primary';        
-        this.isInfo = this.bulmaColor === 'info';        
-        this.isSuccess = this.bulmaColor === 'success';        
-        this.isWarning = this.bulmaColor === 'warning';        
-        this.isDanger = this.bulmaColor === 'danger';        
-    }    
+@Directive({
+    selector: '[buWarning]'
+})
+export class WarningDirective {
+    @HostBinding('class.is-warning') isWarning: boolean;
+    
+    @Input() set buWarning(value: boolean) {
+        this.isWarning = (value !== undefined && value !== false);
+    }
+}
+
+@Directive({
+    selector: '[buSuccess]'
+})
+export class SuccessDirective {
+    @HostBinding('class.is-success') isSuccess: boolean;
+    
+    @Input() set buSuccess(value: boolean) {
+        this.isSuccess = (value !== undefined && value !== false);
+    }
+}
+
+@Directive({
+    selector: '[buInfo]'
+})
+export class InfoDirective {
+    @HostBinding('class.is-info') isInfo: boolean;
+    
+    @Input() set buInfo(value: boolean) {
+        this.isInfo = (value !== undefined && value !== false);
+    }
+}
+
+@Directive({
+    selector: '[buPrimary]'
+})
+export class PrimaryDirective {
+    @HostBinding('class.is-primary') isPrimary: boolean;
+    
+    @Input() set buPrimary(value: boolean) {
+        this.isPrimary = (value !== undefined && value !== false);
+    }
+}
+
+@Directive({
+    selector: '[buBlack]'
+})
+export class BlackDirective {
+    @HostBinding('class.is-black') isBlack: boolean;
+    
+    @Input() set buBlack(value: boolean) {
+        this.isBlack = (value !== undefined && value !== false);
+    }
+}
+
+@Directive({
+    selector: '[buDark]'
+})
+export class DarkDirective {
+    @HostBinding('class.is-dark') isDark: boolean;
+    
+    @Input() set buDark(value: boolean) {
+        this.isDark = (value !== undefined && value !== false);
+    }
+}
+
+@Directive({
+    selector: '[buWhite]'
+})
+export class WhiteDirective {
+    @HostBinding('class.is-white') isWhite: boolean;
+    
+    @Input() set buWhite(value: boolean) {
+        this.isWhite = (value !== undefined && value !== false);
+    }
 }

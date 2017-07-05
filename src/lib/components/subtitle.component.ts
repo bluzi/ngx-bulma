@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'bulma-subtitle',
+    selector: 'bu-subtitle',
     template: `
        <h2 class="subtitle">
         <ng-content></ng-content>

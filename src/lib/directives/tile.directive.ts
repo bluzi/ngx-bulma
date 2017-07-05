@@ -1,11 +1,9 @@
-import { Component, Input, HostBinding } from '@angular/core';
+import { Component, Input, HostBinding, Directive } from '@angular/core';
 
-@Component({
-    selector: 'bulma-tile',
-    template: `<ng-content></ng-content>`
+@Directive({
+    selector: 'bu-tile, [bu-tile]',
 })
-export class TileComponent {
-    @HostBinding('class') class = '';
+export class TileDirective {
     @HostBinding('class.tile') isTile = true;    
 
     @HostBinding('class.is-ancestor') isAncestor: boolean;
@@ -27,9 +25,5 @@ export class TileComponent {
 
     @Input() set vertical(value: boolean) {
         this.isVertical = (value !== undefined && value !== false);        
-    }
-
-    @Input() set size(value: number) {
-        this.class = 'is-' + value;
     }
 }
