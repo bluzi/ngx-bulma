@@ -11,9 +11,9 @@
   <br />
   
   <bu-button buPrimary loading>loading</bu-button>  
-  <a bu-button buSuccess>Directive button</a>
-  <a bu-button outlined buDanger>Outlined button</a>
-  <a bu-button inverted buWarning>inverted button</a>
+  <a buButton buSuccess>Directive button</a>
+  <a buButton outlined buDanger>Outlined button</a>
+  <a buButton inverted buWarning>inverted button</a>
 </section>
 
 <section>
@@ -33,7 +33,7 @@
     Hello from box
   </bu-box>
 
-  <div bu-box>
+  <div buBox>
     Hello from directive box
   </div>
 </section>
@@ -89,17 +89,17 @@
 
   <bu-tile ancestor>
     <bu-tile vertical parent size="4">
-      <bu-tile child bu-box>
+      <bu-tile child buBox>
           <bu-title>One</bu-title>
       </bu-tile>
       
-      <bu-tile child>
+      <bu-tile child buBox>
           <bu-title>Two</bu-title>
       </bu-tile>
     </bu-tile>
 
     <bu-tile parent>
-      <bu-tile child>
+      <bu-tile child buBox>
           <bu-title>Three</bu-title>
       </bu-tile>
     </bu-tile>

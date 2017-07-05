@@ -13,6 +13,6 @@ export class BoxComponent {
 }
 
 @Directive({
-    selector: '[bu-box]',
+    selector: '[buBox]',
 })
 export class BoxDirective extends BoxComponent { }

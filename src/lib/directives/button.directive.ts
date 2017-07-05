@@ -1,7 +1,7 @@
 import { Component, Input, HostBinding, Directive } from '@angular/core';
 
 @Directive({
-    selector: 'bu-button, [bu-button]',
+    selector: 'bu-button, [buButton]',
 })
 export class ButtonDirective {
     @HostBinding('class.button') isButton = true;

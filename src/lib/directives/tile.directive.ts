@@ -1,7 +1,7 @@
 import { Component, Input, HostBinding, Directive } from '@angular/core';
 
 @Directive({
-    selector: 'bu-tile, [bu-tile]',
+    selector: 'bu-tile, [buTile]',
 })
 export class TileDirective {
     @HostBinding('class.tile') isTile = true;    
