@@ -1,3 +1,4 @@
+import { BreadcrumbComponent, CrumbDirective } from './components/breadcrumb.component';
 import { SubtitleDirective } from './directives/subtitle.directive';
 import { TileDirective } from './directives/tile.directive';
 import { MessageComponent } from './components/message.component';
@@ -9,7 +10,7 @@ import { IconComponent } from './components/icon.component';
 import { BoxComponent, BoxDirective } from './components/box.component';
 import { SmallDirective, NormalDirective, MediumDirective, LargeDirective } from './directives/size.directive';
 import { TagComponent } from './components/tag.component';
-import { DeleteComponent } from './components/delete.component';
+import { DeleteDirective } from './directives/delete.directive';
 import { NgModule } from '@angular/core';
 import { TabsComponent, TabDirective } from './components/tabs.component';
 import { ColumnsComponent, ColumnComponent } from './components/columns.component';
@@ -23,7 +24,7 @@ import {
 
 const publicDirectives = [
   ButtonDirective,
-  DeleteComponent,
+  DeleteDirective,
   TagComponent,
   TitleDirective,
   SubtitleDirective,
@@ -38,6 +39,9 @@ const publicDirectives = [
   ColumnsComponent,
   ColumnComponent,
   TileDirective,
+  BreadcrumbComponent,
+  CrumbDirective,
+  
 
   DangerDirective,
   WarningDirective,

@@ -6,7 +6,7 @@ import { Component, Input, Output, EventEmitter, HostBinding, Directive } from '
         <div class="message-header">
             <p *ngIf="header">{{header}}</p>
             <ng-content select="header" *ngIf="!header"></ng-content>
-            <bu-delete *ngIf="closeable !== undefined" (click)="close.emit()"></bu-delete>
+            <buDelete *ngIf="closeable !== undefined" (click)="close.emit()"></buDelete>
         </div>
         <div class="message-body">
             <ng-content></ng-content>

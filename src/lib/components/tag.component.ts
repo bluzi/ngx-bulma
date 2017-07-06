@@ -4,7 +4,7 @@ import { Component, Input, Output, EventEmitter, HostBinding } from '@angular/co
     selector: 'bu-tag',
     template: `
         <ng-content></ng-content>
-        <bu-delete *ngIf="closeable !== undefined" (click)="close.emit()"></bu-delete>
+        <buDelete *ngIf="closeable !== undefined" (click)="close.emit()"></buDelete>
     `,
 })
 export class TagComponent {

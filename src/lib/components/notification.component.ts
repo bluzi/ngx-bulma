@@ -3,7 +3,7 @@ import { Component, Input, Output, EventEmitter, HostBinding } from '@angular/co
 @Component({
     selector: 'bu-notification, [buNotification]',
     template: `
-        <bu-delete *ngIf="closeable !== undefined" (click)="close.emit()"></bu-delete>
+        <buDelete *ngIf="closeable !== undefined" (click)="close.emit()"></buDelete>
         <ng-content></ng-content>
     `,
     styles: [
