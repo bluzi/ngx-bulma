@@ -7,7 +7,7 @@ import { Component, Input, HostBinding } from '@angular/core';
     `,
 })
 export class IconComponent { 
-    @HostBinding('class.icon') isIcon = true;
+    @HostBinding('class.icon') private isIcon = true;
 
     @Input() name;
 }

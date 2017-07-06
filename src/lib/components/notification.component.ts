@@ -1,7 +1,7 @@
 import { Component, Input, Output, EventEmitter, HostBinding } from '@angular/core';
 
 @Component({
-    selector: 'bu-notification, [bu-notification]',
+    selector: 'bu-notification, [buNotification]',
     template: `
         <bu-delete *ngIf="closeable !== undefined" (click)="close.emit()"></bu-delete>
         <ng-content></ng-content>
@@ -11,7 +11,7 @@ import { Component, Input, Output, EventEmitter, HostBinding } from '@angular/co
     ]
 })
 export class NotificationComponent {
-    @HostBinding('class.notification') isBox = true;
+    @HostBinding('class.notification') private isBox = true;
 
     @Input() closeable: Boolean;
 

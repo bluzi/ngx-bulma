@@ -4,7 +4,7 @@ import { Directive, HostBinding, OnChanges, Input, SimpleChanges } from '@angula
     selector: '[buSmall]'
 })
 export class SmallDirective {
-    @HostBinding('class.is-small') isSmall: boolean;
+    @HostBinding('class.is-small') private isSmall: boolean;
     
     @Input() set buSmall(value: boolean) {
         this.isSmall = (value !== undefined && value !== false);
@@ -15,7 +15,7 @@ export class SmallDirective {
     selector: '[buNormal]'
 })
 export class NormalDirective {
-    @HostBinding('class.is-normal') isNormal: boolean;
+    @HostBinding('class.is-normal') private isNormal: boolean;
     
     @Input() set buNormal(value: boolean) {
         this.isNormal = (value !== undefined && value !== false);
@@ -26,7 +26,7 @@ export class NormalDirective {
     selector: '[buMedium]'
 })
 export class MediumDirective {
-    @HostBinding('class.is-medium') isMedium: boolean;
+    @HostBinding('class.is-medium') private isMedium: boolean;
     
     @Input() set buMedium(value: boolean) {
         this.isMedium = (value !== undefined && value !== false);
@@ -37,7 +37,7 @@ export class MediumDirective {
     selector: '[buLarge]'
 })
 export class LargeDirective {
-    @HostBinding('class.is-large') isLarge: boolean;
+    @HostBinding('class.is-large') private isLarge: boolean;
     
     @Input() set buLarge(value: boolean) {
         this.isLarge = (value !== undefined && value !== false);

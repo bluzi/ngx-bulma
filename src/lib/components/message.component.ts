@@ -14,7 +14,7 @@ import { Component, Input, Output, EventEmitter, HostBinding, Directive } from '
     `,
 })
 export class MessageComponent {
-    @HostBinding('class.message') isIcon = true;
+    @HostBinding('class.message') private isMessage = true;
 
     @Input() closeable: Boolean;
     @Input() header: string;

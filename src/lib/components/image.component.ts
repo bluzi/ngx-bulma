@@ -4,7 +4,7 @@ import { Component, Input } from '@angular/core';
     selector: 'bu-image',
     template: `
         <figure class="image">
-            <img [src]="src">
+            <img [src]="src" />>
         </figure>
     `,
 })

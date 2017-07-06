@@ -5,7 +5,7 @@ import { Component, Input, HostBinding } from '@angular/core';
     template: ``,
 })
 export class DeleteComponent {
-    @HostBinding('class.delete') isDelete = true;
+    @HostBinding('class.delete') private isDelete = true;
 
     @Input() size;
  }

@@ -5,7 +5,7 @@ import { Component, Input, ContentChildren, Directive, HostBinding, SimpleChange
     template: `<ng-content></ng-content>`
 })
 export class ColumnComponent {
-    @HostBinding('class') class: string;
+    @HostBinding('class') private class: string;
 
     @Input() set size(value: string) {
         if (!value) {
@@ -31,6 +31,6 @@ export class ColumnComponent {
     template: `<ng-content></ng-content>`
 })
 export class ColumnsComponent {
-      @HostBinding('class.columns') isCoulmns = true;
+      @HostBinding('class.columns') private isCoulmns = true;
  }
 

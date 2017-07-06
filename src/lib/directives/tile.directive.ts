@@ -6,10 +6,10 @@ import { Component, Input, HostBinding, Directive } from '@angular/core';
 export class TileDirective {
     @HostBinding('class.tile') isTile = true;    
 
-    @HostBinding('class.is-ancestor') isAncestor: boolean;
-    @HostBinding('class.is-parent') isParent: boolean;
-    @HostBinding('class.is-child') isChild: boolean;
-    @HostBinding('class.is-vertical') isVertical: boolean;
+    @HostBinding('class.is-ancestor') private isAncestor: boolean;
+    @HostBinding('class.is-parent') private isParent: boolean;
+    @HostBinding('class.is-child') private isChild: boolean;
+    @HostBinding('class.is-vertical') private isVertical: boolean;
 
     @Input() set ancestor(value: boolean) {
         this.isAncestor = (value !== undefined && value !== false);

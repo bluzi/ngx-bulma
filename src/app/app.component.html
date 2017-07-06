@@ -17,6 +17,12 @@
 </section>
 
 <section>
+  <bu-subtitle>Titles</bu-subtitle>
+  <h1 buTitle>Directive Title</h1>
+  <h1 buSubtitle>Directive Subtitle</h1>
+</section>
+
+<section>
   <bu-subtitle>Tags</bu-subtitle>
   <bu-tag buSuccess>
     Success Tag
@@ -63,6 +69,7 @@
 
 <section>
   <bu-subtitle>Tabs</bu-subtitle>
+  <h3>Tabs without content</h3>
   <bu-tabs fullwidth>
     <bu-tab header="hello"></bu-tab>
     <bu-tab header="world"></bu-tab>
@@ -70,9 +77,14 @@
 
   <br />
 
+  <h3>Tabs with content</h3>
   <bu-tabs toggle fullwidth buLarge>
-    <bu-tab header="hello" icon="home"></bu-tab>
-    <bu-tab header="world" icon="globe"></bu-tab>
+    <bu-tab header="hello" icon="home">
+      Hello!!
+    </bu-tab>
+    <bu-tab header="world" icon="globe">
+      World!!
+    </bu-tab>
   </bu-tabs>
 </section>
 

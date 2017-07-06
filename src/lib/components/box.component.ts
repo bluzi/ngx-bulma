@@ -9,7 +9,7 @@ import { Component, Input, HostBinding, Directive } from '@angular/core';
     `,
 })
 export class BoxComponent {
-    @HostBinding('class.box') isBox = true;
+    @HostBinding('class.box') private isBox = true;
 }
 
 @Directive({

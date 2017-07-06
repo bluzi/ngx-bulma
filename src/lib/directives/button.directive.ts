@@ -4,12 +4,12 @@ import { Component, Input, HostBinding, Directive } from '@angular/core';
     selector: 'bu-button, [buButton]',
 })
 export class ButtonDirective {
-    @HostBinding('class.button') isButton = true;
+    @HostBinding('class.button') private isButton = true;
 
-    @HostBinding('class.is-loading') isLoading: boolean;
-    @HostBinding('class.is-outlined') isOutlined: boolean;
-    @HostBinding('class.is-inverted') isInverted: boolean;
-    @HostBinding('class.is-link') isLink: boolean;
+    @HostBinding('class.is-loading') private isLoading: boolean;
+    @HostBinding('class.is-outlined') private isOutlined: boolean;
+    @HostBinding('class.is-inverted') private isInverted: boolean;
+    @HostBinding('class.is-link') private isLink: boolean;
 
     @Input() set loading(value: boolean) {
         this.isLoading = (value !== undefined && value !== false);

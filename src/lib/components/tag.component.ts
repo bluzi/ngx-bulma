@@ -8,7 +8,7 @@ import { Component, Input, Output, EventEmitter, HostBinding } from '@angular/co
     `,
 })
 export class TagComponent {
-    @HostBinding('class.tag') isTag = true;
+    @HostBinding('class.tag') private isTag = true;
 
     @Input() closeable: Boolean;
 
