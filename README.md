@@ -22,16 +22,8 @@ This is the home for bulma components built for and with Angular.
 | Feature          | Status                              | Docs         | Issue          |
 |------------------|-------------------------------------|--------------|----------------|
 |           Typedoc|                 planned, not started|           -  |              NA|
-|                  |                                     |           -  |                |
-|                  |                                     |           -  |                |
-|                  |                                     |           -  |                |
-|                  |                                     |           -  |                |
-|                  |                                     |           -  |                |
-|                  |                                     |           -  |                |
-|                  |                                     |           -  |                |
-|                  |                                     |           -  |                |
-|                  |                                     |           -  |                |
-|                  |                                     |           -  |                |
+|           Buttons|                 planned, not started|           -  |              NA|
+|           Layouts|                 planned, not started|           -  |              NA|
 |                  |                                     |           -  |                |
 |                  |                                     |           -  |                |
 |                  |                                     |           -  |                |
