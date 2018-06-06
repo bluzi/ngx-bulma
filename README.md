@@ -5,8 +5,8 @@
 This is the home for bulma components built for and with Angular.
 
 #### Quick links
-[Contributing](https://github.com/angular/material2/blob/master/CONTRIBUTING.md) |
-[Dev guide](https://github.com/angular/material2/blob/master/DEV.md) |
+[Contributing](https://github.com/bluzi/ngx-bulma/blob/master/CONTRIBUTING.md) |
+[Dev guide](https://github.com/bluzi/ngx-bulma/blob/master/DEV.md) |
 
 #### Available features
 
@@ -46,8 +46,8 @@ This is the home for bulma components built for and with Angular.
   <bu-button buDanger buLarge>large danger button</bu-button>
   <bu-button buDark buNormal>normal dark button</bu-button>
   <bu-button buWarning buSmall>small warning button</bu-button>
-  
-  <bu-button buPrimary loading>loading</bu-button>  
+
+  <bu-button buPrimary loading>loading</bu-button>
   <a buButton buSuccess>Directive button</a>
   <a buButton outlined buDanger>Outlined button</a>
   <a buButton inverted buWarning>inverted button</a>ton</a>
@@ -71,6 +71,3 @@ components will serve as an example of how to write Angular code following best 
 ## Browser and screen reader support
 NGX-Bulma supports the most recent two versions of all major browsers:
 Chrome (including Android), Firefox, Safari (including iOS), and IE11 / Edge
-
-## Credit
-We borrowed much of the coding practices from Angular Material. As such we want to give credit where credit is due. Much of the [CONTRIBUTING.md](https://github.com/bluzi/ngx-bulma/blob/master/CONTRIBUTING.md) file and [README.md](https://github.com/bluzi/ngx-bulma/blob/master/README.md) file are based off of [Angular Material's](https://github.com/angular/material2) CONTRIBUTING.md and README.md
