@@ -6,14 +6,37 @@ This is the home for bulma components built for and with Angular.
 
 #### Quick links
 [Contributing](https://github.com/angular/material2/blob/master/CONTRIBUTING.md) |
+[Dev guide](https://github.com/angular/material2/blob/master/DEV.md) |
+
+#### Available features
+
+| Feature          | Notes                                                  | Docs         |
+|------------------|--------------------------------------------------------|--------------|
+|                  |                                                        |              |
+|                  |                                                        |              |
 
 
-# ngx-bulma
 
-ngx-bulma is a module that brings Bulma to Angular.
+#### In progress, planned, and non-planned features
 
-This project is still in its early stages, and it is NOT production or even development ready.
-It'll be ready in about a month.
+| Feature          | Status                              | Docs         | Issue          |
+|------------------|-------------------------------------|--------------|----------------|
+|           Typedoc|                 planned, not started|           -  |              NA|
+|                  |                                     |           -  |                |
+|                  |                                     |           -  |                |
+|                  |                                     |           -  |                |
+|                  |                                     |           -  |                |
+|                  |                                     |           -  |                |
+|                  |                                     |           -  |                |
+|                  |                                     |           -  |                |
+|                  |                                     |           -  |                |
+|                  |                                     |           -  |                |
+|                  |                                     |           -  |                |
+|                  |                                     |           -  |                |
+|                  |                                     |           -  |                |
+|                  |                                     |           -  |                |
+|                  |                                     |           -  |                |
+
 
 ## Code samples
 
@@ -31,7 +54,7 @@ It'll be ready in about a month.
 ```
 
 
-## The goal of Angular Material
+## The goal of NGX-Bulma
 Our goal is to build a set of high-quality UI components built with Angular and TypeScript,
 following the Bulma Design Spec. These
 components will serve as an example of how to write Angular code following best practices.
@@ -41,10 +64,13 @@ components will serve as an example of how to write Angular code following best 
 * Straightforward APIs that don't confuse developers.
 * Behave as expected across a wide variety of use-cases without bugs.
 * Behavior is well-tested with both unit and integration tests.
-* Customizable within the bounds of the Material Design specification.
+* Customizable within the bounds of Bulma Design specification.
 * Performance cost is minimized.
 * Code is clean and well-documented to serve as an example for Angular devs.
 
 ## Browser and screen reader support
 NGX-Bulma supports the most recent two versions of all major browsers:
 Chrome (including Android), Firefox, Safari (including iOS), and IE11 / Edge
+
+## Credit
+We borrowed much of the coding practices from Angular Material. As such we want to give credit where credit is due. Much of the [CONTRIBUTING.md](https://github.com/bluzi/ngx-bulma/blob/master/CONTRIBUTING.md) file and [README.md](https://github.com/bluzi/ngx-bulma/blob/master/README.md) file are based off of [Angular Material's](https://github.com/angular/material2) CONTRIBUTING.md and README.md
